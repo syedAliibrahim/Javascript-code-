@@ -401,6 +401,8 @@
 // findGrade(score1);
 // findGrade(score2);
 
+// function 
+
                 //  Function in Expressions
                 // function multiply ( num1 , num2 ) {
                 //     return num1 * num2 ;
@@ -413,7 +415,29 @@
                 // var add = sum ( 7,5 ) ; |
                 // //console.log("Multiply = " , mul ) ;
                 // console.log ( " Addition = " , add ) ;  
-                
+
+                // function hello (){
+                //         document.write("hello sir")
+                // }
+                // document.write(hello)
+
+
+        //         function Parameters(a,b,c,d,){
+        //            console.log (a + b - c + d )
+        //         }
+        //        Parameters(3,2,6,5);
+        //        Parameters(5,2,6,5);
+        //        Parameters(9,2,6,5);
+               
+                  function add(a,b){
+                     return a+b;
+                  }     
+                  let c = add (5,6);      
+                console.log(c)
+                document.write(c)
+
+
+                // TRADE1000
         //         function multiply ( num1 , num2 ) {
         //             return num1 * num2 ;
         //         }
@@ -457,6 +481,10 @@
 // function sum (a, b){
 //     return a+b;
 // }
+                                //                     Ternary Operator
+
+// var age =13
+
 
 
                                 // Arguments Passed Value & Reference
