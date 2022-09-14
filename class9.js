@@ -429,12 +429,12 @@
         //        Parameters(5,2,6,5);
         //        Parameters(9,2,6,5);
                
-                  function add(a,b){
-                     return a+b;
-                  }     
-                  let c = add (5,6);      
-                console.log(c)
-                document.write(c)
+                //   function add(a,b){
+                //      return a+b;
+                //   }     
+                //   let c = add (5,6);      
+                // console.log(c)
+                // document.write(c)
 
 
                 // TRADE1000
@@ -481,6 +481,9 @@
 // function sum (a, b){
 //     return a+b;
 // }
+
+
+
                                 //                     Ternary Operator
 
 // var age =13
@@ -490,24 +493,56 @@
                                 // Arguments Passed Value & Reference
 
 
+                                // var num = 5 ;
+                                // function changeValue ( a ) {
+                                //     a = 7 ; // change to a will not affect num
+                                // }
+                                // changeValue ( num ) ;
+                                // console.log ( num ) ; // 5 , num will be be updated
+
+                                //    var arr = [ 4 , 6 , 7 , 9 ] ;
+                                //    function updateArray ( val ) { // array received in val
+                                //     val [ 1 ] = 57 ; // updating val will also update arr
+                                //     }
+                                //         console.log ( arr [ 1 ] ) ;
+                                //            updateArray ( arr ) ;
+                                //           console.log ( arr [ 1 ] ) ;
+                                //           console.log ( arr [ 1 ] ) ;
+                                //      // 6 before calling function
+                                      // 57 after calling function
+
+                        //  var obj = { name : " John " , age : 56 } ;
+                        //  function updateObject ( val ) { // object received in val
+                        //      val.age = 40 ; // updating val will also update arr
+                        //  }
+                        //  console.log ( obj.age ) ; // 56 before calling function
+                        //  updateObject ( obj ) ;
+                        //  console.log ( obj.age ) ; // 40 after calling function
+                        //  console.log ( obj.age ) ;
 
 
+///Switch Statement
+// var day =  +prompt("Switch Statement exp");
+// switch (day) {
+// case 6:
+// console.log("Today is Saturday") ;
+// break;
+// case 0:
+// console.log("Today is Sunday") ;
+// break;
+// default:
+// console.log("Looking forward to the Weekend") ;                   
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//////While Loop
+// while (i < 10) {
+//         console.log("I " + i);
+//         i++;
+// }
+                                ////Event
+                                //       function fool(){
+                                //         var a= 2+2;
+                                //       }
+                                function clickBtn(){
+                                        alert("click yoooo")
+                                }
