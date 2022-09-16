@@ -197,8 +197,39 @@
 // var num = +prompt("pleas enter your number");
 // for (var i=1; i<=10; i++ ){
 //     console.log(num+" x " +i+"="+(num*i));
+
+
 // }
 // //                 ARRRAY
+// sort()
+// reverse()
+// pop()
+// push()
+// shift()
+// unshift()
+// concat()
+// joint()
+
+// slice()
+// splice()
+// isArray()
+// indexOf()
+// lastIndexOf()
+// entries()
+// every()
+// Filter()
+
+// find()
+// findindex()
+// includes()
+// some()
+// forEach()
+// toString()
+// valueOf()
+// Fill ()
+
+
+
 // // var students = ["asd" , "ghf", "kloljh"];
 // // // console.log(students[1])
 // // alert("wel"+ students[1])
@@ -543,6 +574,125 @@
                                 //       function fool(){
                                 //         var a= 2+2;
                                 //       }
-                                function clickBtn(){
-                                        alert("click yoooo")
-                                }
+                                // function clickBtn(){
+                                //         alert("click yoooo")
+                                // }
+
+///////////////////////////////Reading field values========================================
+
+// function getName(){
+//         var name =document.getElementById("name")
+//         console.log(name.value)
+//         name.value=""
+// }
+///////////////////////////////Setting field values=====================
+// function setName(){
+//         var name =document.getElementById('name')
+//         name.value="ali ibra"
+//         var para=document.getElementById("para")
+//         para.innerHTML = "hello klnndsv lknlsdnd  lns dsm n dsm "
+// }
+// setName()
+
+
+//          function checkAddress() {
+
+//         event.preventDefault();
+        
+//         // var email = email_field.value;
+//         var email = document.getElementById( 'email_field').value;
+//         if ( email === "") {
+        
+//         alert("Email address required.");
+//         }else{
+//          result.innerHTML = email
+//         }
+// }
+// function readmore(){
+//         var text="entering the city and state So when she clicks out of the field you fill in the city field for herLet me show"
+//         var pera
+// }
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////ES6=========================================================
+// function mystery(...params) {
+//         return params;
+//         }
+//         let a = mystery(1,23,4);
+        // console.log(mystery)
+        let name = 'Harry';
+// let occupation = 'wizard';
+// console.log(`Hi! My name is ${name}. I'm a ${occupation}.`);
+// let x, { x: y = 1 } = { x }; y;
+// console.log(x)
+// (function() {
+//         let f = this ? class g { } : class h { };
+//         return [ typeof f, typeof h ];
+//         })();
+        // typeof (new (class F extends (String, Array) { })).substring
+        // (function() {
+        //         if (false) {
+        //         let f = { g() => 1 };
+        //         }
+        //         return typeof f;
+        //         })()
+        // typeof (function* f() { yield f })().next().next()
+//         let a = 12, b = 3;
+// [a, b] = [b, a];
+// console.log(a,b)
+
+// const obj ={foo:1}
+// obj.bar=2
+// console.log(obj)
+// const obj = {
+//         outer: function() {
+//           const self1 = this
+      
+//           const inner1 = () => {
+//             const self2 = this
+      
+//             const inner2 = () => {
+//               const self3 = this
+//             }
+//           }
+//         }
+//       }
+//       console.log(obj)
+
+// //temlata leiterals
+// let firstName ="sal"
+// let lastName ="afg"
+// console.log(`${firstName}${lastName}`)
+
+// //spread operators
+// var students1 =["alio","afagfg"]
+// var students2 =["inbgggh","afasfdsggdgdgfg"]
+// var students3 =[...students1,...students2,"zzzzzzzh","wwwwwwwwwwww"]
+// // var merage =students1.concat(students2).concat(students3)
+// console.log(students3)
+
+
+/////////////////////////////////object destructuring====================
+
+// let students={
+//         names: "ghous",
+//         school: "saylani",
+//         ROll: 23,
+// }
+// let {school,names,ROll}=students;
+// console.log(ROll)
+// console.log(names)
+/////////////////////////////ternary operators============
+var age=51;
+var check = age > 30 && age <60?
+ "305 se kf lflf "
+ :
+"30 se chota hai"
+console.log(check)
+
