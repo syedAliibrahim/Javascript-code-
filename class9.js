@@ -689,10 +689,27 @@
 // console.log(ROll)
 // console.log(names)
 /////////////////////////////ternary operators============
-var age=51;
-var check = age > 30 && age <60?
- "305 se kf lflf "
- :
-"30 se chota hai"
-console.log(check)
+// var age=51;
+// var check = age > 30 && age <60?
+//  "305 se kf lflf "
+//  :
+// "30 se chota hai"
+// console.log(check)
 
+
+
+////////////function expressions==========================
+
+
+// let foooo =function(){
+//         console.log("hello jnfkjfn")
+// }
+// foooo()
+
+
+//////////////////////Arrow function================
+
+// let hello =(name,students)=>{
+//         console.log(`hello ${name} ${students}`)
+// }
+// hello()
