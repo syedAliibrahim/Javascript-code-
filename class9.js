@@ -613,20 +613,65 @@
 //         var pera
 // }
 
+////////////////////////////////////The DOM======================================
 
+// function getElement(){
+//         var p =document.getElementsByTagName('p')
+//         console.log(p)
+// }
+////////////////The DOM:Finding children
 
+// function getElement(){
+//         console.log(document.childNodes[1].childNodes)
+// }
+///////////////////////////////add to cart============
+// function addtocart(){
+//         var img = document.getElementById("product")
+//         var name =document.getElementById("name")
+//         var price=document.getElementById("price")
+//         var cartimg = document.getElementById("cart-product")
+//         var cartname =document.getElementById("cart-name")
+//         var cartprice=document.getElementById("cart-price")
 
+//         // cartimg.src= img.src
+//         cartname.innerHTML=name.innerHTML
+        // cartprice.innerHTML=price.innerHTML
+        // console.log(img.src)
+        // console.log(name.innerHTML)
+        // console.log(price.innerHTML)
+
+// }
+
+var list = document.getElementsByTagName("li")
+console.log(list[3])
 
 
 
 
 /////////////////////////////////////////////ES6=========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function mystery(...params) {
 //         return params;
 //         }
 //         let a = mystery(1,23,4);
         // console.log(mystery)
-        let name = 'Harry';
+        // let name = 'Harry';
 // let occupation = 'wizard';
 // console.log(`Hi! My name is ${name}. I'm a ${occupation}.`);
 // let x, { x: y = 1 } = { x }; y;
