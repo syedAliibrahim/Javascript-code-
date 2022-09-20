@@ -758,3 +758,26 @@ console.log(list[3])
 //         console.log(`hello ${name} ${students}`)
 // }
 // hello()
+
+
+///////////////////////map=======================
+
+
+
+// Map.set()
+// Map.get()
+// Map.size()
+// Map.delete()
+// Map.clear()
+// Map.has()
+
+// typeof
+// instanceof
+
+// foreach
+
+// Map.keys()
+// Map.values()
+// Map.entries()
+
+
