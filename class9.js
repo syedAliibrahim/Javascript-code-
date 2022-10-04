@@ -432,7 +432,17 @@
 // findGrade(score1);
 // findGrade(score2);
 
-// function 
+let age = 30;
+if (true){
+     console.log("in","age");
+}
+
+console.log("out"age);
+
+
+
+
+                                                               // function 
 
                 //  Function in Expressions
                 // function multiply ( num1 , num2 ) {
@@ -478,7 +488,13 @@
         // // var mul multiply ( 8 , 3 ) ;
         // var add = sum ( multiply ( 8 , 3 ) , 5 ) ; 
         // //console.log("Multiply = " , mul ) ;
-        // console.log ( " Addition = " , add ) ;
+        // console.log ( " Addition = " , add ) ; 
+
+
+
+
+
+
                    
 
         // Local vs Global Variables
@@ -642,28 +658,12 @@
 
 // }
 
-var list = document.getElementsByTagName("li")
-console.log(list[3])
-
+// var list = document.getElementsByTagName("li")
+// console.log(list[3])
 
 
 
 /////////////////////////////////////////////ES6=========================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // function mystery(...params) {
