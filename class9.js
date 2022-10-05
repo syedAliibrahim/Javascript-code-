@@ -432,12 +432,12 @@
 // findGrade(score1);
 // findGrade(score2);
 
-let age = 30;
-if (true){
-     console.log("in","age");
-}
+// let age = 30;
+// if (true){
+//      console.log("in","age");
+// }
 
-console.log("out"age);
+// console.log("out","age");
 
 
 
@@ -660,6 +660,20 @@ console.log("out"age);
 
 // var list = document.getElementsByTagName("li")
 // console.log(list[3])
+                     
+                //  Dom attributes
+//      <p class="gfg" id="pp1">this is exp</p>
+// var target= document.getElementById("p1")
+// console.log(target.attributes[1].nodeValue)
+
+
+//////////////// chapter#67
+var p = document.createElement('p');
+var text=document.createTextNode("ghous ahmed")
+p.appendChild(text)
+var main=document.getElementById("main")
+main.appendChild(p)
+// console.log(p)
 
 
 
