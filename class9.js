@@ -587,6 +587,17 @@
 //         i++;
 // }
                                 ////Event
+                                //onclick
+ // jab user OnClick pe click kata hai tu function fire hota hai like hai Button
+function test(){
+        var a= 2+2;
+        console.log(a)
+}
+function cbtn(){
+        alert("cliii")
+}
+
+
                                 //       function fool(){
                                 //         var a= 2+2;
                                 //       }
@@ -675,6 +686,11 @@
 // main.appendChild(p)
 // console.log(p)
 
+// function addMessage(){
+//         var val=document.getElementById("val")
+//         var p =document.createElement("p")
+//         var textNode = document.createTextNode()
+// }
 
 
 /////////////////////////////////////////////ES6=========================================================
