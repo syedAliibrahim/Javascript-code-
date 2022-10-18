@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <script src="style.css"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<style>
+<!-- <style>
     /* .cart {
         height: 200px;
         width: 300px;
@@ -20,16 +20,47 @@
     .main {
         display: flex;
     } */
-</style>
+</style> -->
 
 <body>
 
      <!-- <a href="#" onclick=" test()">click me</a> -->
      <!-- <button onclick="cbtn()">click me</button> -->
 
-     <input type="text" onblur="this.style.backgroundColor='yellow';" 
+     <!-- <input id="name" type="text" onblur="this.style.backgroundColor='yellow';" 
      onFocus="this.style.backgroundColor='lightcoral';">
-     <button>click me</button>
+     <button onclick="getName()">click me</button> -->
+    <!-- Calculatr -->
+    <div class="main">
+        <div >
+            <input class="result" type="text" name="" id="result">
+        </div>
+        <div>
+            <button class="clearBtn" onclick="clearResult()">C</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('7')">7</button>
+            <button class="btn"  onclick="getNumber('8')">8</button>
+            <button class="btn"  onclick="getNumber('9')">9</button>
+            <button class="btn"  onclick="getNumber('*')">x</button>
+        </div>
+        <div>
+            <button class="btn"  onclick="getNumber('4')">4</button>
+            <button class="btn"  onclick="getNumber('5')">5</button>
+            <button class="btn"  onclick="getNumber('6')">6</button>
+            <button class="btn"  onclick="getNumber('-')">-</button>
+        </div>
+        <div>
+            <button class="btn"  onclick="getNumber('1')">1</button>
+            <button class="btn"  onclick="getNumber('2')">2</button>
+            <button class="btn"  onclick="getNumber('3')">3</button>
+            <button class="btn"  onclick="getNumber('+')">+</button>
+        </div>
+        <div>
+            <button class="halfBtn"  onclick="getNumber('0')">0</button>
+            <button class="halfBtn"  onclick="getResult()">=</button>
+        </div>
+    </div>
 
     <!-- <div class="head head--small">
         <div class="head__eye">(o)</div>

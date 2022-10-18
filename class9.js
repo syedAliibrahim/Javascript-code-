@@ -589,13 +589,35 @@
                                 ////Event
                                 //onclick
  // jab user OnClick pe click kata hai tu function fire hota hai like hai Button
-function test(){
-        var a= 2+2;
-        console.log(a)
-}
-function cbtn(){
-        alert("cliii")
-}
+// function test(){
+//         var a= 2+2;
+//         console.log(a)
+// }
+// function cbtn(){
+//         alert("cliii")
+// }
+// function getName(){
+//         var name= document.getElementById("name")
+//         console.log(name.value)
+//         name.value="ssssssssf";
+// }
+             //    Calculatr 
+             function getNumber(num){
+                console.log(num)
+                var result = document.getElementById("result")
+                result.value += num;
+             }
+             function clearResult(){
+                var result = document.getElementById("result")
+                result.value ="";
+             }
+             function getResult (){
+                var result = document.getElementById("result")
+                result.value =eval(result.value)
+             }
+
+
+
 
 
                                 //       function fool(){
