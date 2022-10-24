@@ -602,19 +602,19 @@
 //         name.value="ssssssssf";
 // }
              //    Calculatr 
-             function getNumber(num){
-                console.log(num)
-                var result = document.getElementById("result")
-                result.value += num;
-             }
-             function clearResult(){
-                var result = document.getElementById("result")
-                result.value ="";
-             }
-             function getResult (){
-                var result = document.getElementById("result")
-                result.value =eval(result.value)
-             }
+        //      function getNumber(num){
+        //         console.log(num)
+        //         var result = document.getElementById("result")
+        //         result.value += num;
+        //      }
+        //      function clearResult(){
+        //         var result = document.getElementById("result")
+        //         result.value ="";
+        //      }
+        //      function getResult (){
+        //         var result = document.getElementById("result")
+        //         result.value =eval(result.value)
+        //      }
 
 
                                 //       function fool(){
@@ -658,6 +658,21 @@
 //         var text="entering the city and state So when she clicks out of the field you fill in the city field for herLet me show"
 //         var pera
 // }
+
+
+///           setInterval()/// setTimeout
+///setinterval bar bar repate hota hai
+// function time(){
+//    console.log("running...")
+// }  
+// setInterval(time,10000)
+
+///setTimeout
+///setTimeOut Ek bar chalta hai
+// function timeOut(){
+//         console.log("running timeOut")
+// }
+// setTimeout(timeOut,3000)
 
 ////////////////////////////////////The DOM======================================
 
