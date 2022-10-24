@@ -617,9 +617,6 @@
              }
 
 
-
-
-
                                 //       function fool(){
                                 //         var a= 2+2;
                                 //       }
