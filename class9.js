@@ -685,6 +685,17 @@
 // function getElement(){
 //         console.log(document.childNodes[1].childNodes)
 // }
+
+
+///Enable/disable Button function
+function disableBtn(){
+        var btn =document.getElementById("example")
+        btn.disabled=true
+}
+function enableBtn(){
+        var btn =document.getElementById("example")
+        btn.disabled=false
+}
 ///////////////////////////////add to cart============
 // function addtocart(){
 //         var img = document.getElementById("product")
