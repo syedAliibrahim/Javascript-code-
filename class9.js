@@ -685,17 +685,24 @@
 // function getElement(){
 //         console.log(document.childNodes[1].childNodes)
 // }
+//date 10/24/2022
+// var list =document.getElementsByTagName("li")
+// console.log(list[3])
+// console.log(list.length)
 
+var target = document.getElementById("p1")
+target.setAttribute('class',"blue")
+// console.log(target.getAttribute("class"))
 
 ///Enable/disable Button function
-function disableBtn(){
-        var btn =document.getElementById("example")
-        btn.disabled=true
-}
-function enableBtn(){
-        var btn =document.getElementById("example")
-        btn.disabled=false
-}
+// function disableBtn(){
+//         var btn =document.getElementById("example")
+//         btn.disabled=true
+// }
+// function enableBtn(){
+//         var btn =document.getElementById("example")
+//         btn.disabled=false
+// }
 ///////////////////////////////add to cart============
 // function addtocart(){
 //         var img = document.getElementById("product")
