@@ -690,9 +690,52 @@
 // console.log(list[3])
 // console.log(list.length)
 
-var target = document.getElementById("p1")
-target.setAttribute('class',"blue")
-// console.log(target.getAttribute("class"))
+// var target = document.getElementById("p1")
+// target.setAttribute('class',"blue")
+// console.log(target.Attribute("class"))
+// var p= document.createElement('p')
+// var text = document.createTextNode("jjgj kgkjg")
+// p.appendChild(text)
+// var main=document.getElementById("main")
+// main.appendChild(p);
+
+// function addMessage(){
+//         var val =document.getElementById("val")
+//         var p =document.createElement("p")
+//         var textNode=document.createTextNode(val.value)
+//         p.appendChild(textNode)
+//         var message=document.getElementById("messages")
+//         message.appendChild(p)
+//         val.value=""
+// }
+///////////////////todofunction
+var list=document.getElementById("list")
+function addtodo(){
+        var todo_item=document.getElementById("todo-item")
+
+        //create li tag with text node
+        var li =document.createElement('li')
+        var liText=document.createTextNode(todo_item.value)
+        li.appendChild(liText)
+        list.appendChild(li)
+
+        //create delete button
+        var delBtn = document.createElement("button")
+        delText=document.createTextNode("Delete")
+        delBtn.setAttribute("class","btn")
+        delBtn.setAttribute("onclick","deleteItem(this)")
+        delBtn.appendChild(delText)
+        li.appendChild(delBtn)
+
+        list.appendChild(li)
+
+        todo_item.value=""
+        console.log(li)
+}
+
+function deleteItem(e){
+  console.log(e)
+}
 
 ///Enable/disable Button function
 // function disableBtn(){

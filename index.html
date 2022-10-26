@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<!-- <style>
+<style>
     /* .cart {
         height: 200px;
         width: 300px;
@@ -20,10 +20,25 @@
     .main {
         display: flex;
     } */
-</style> -->
+    body{
+        text-align: center;
+
+    }
+    .btn{
+        background-color: rgb(167, 167, 199);
+    }
+</style>
 
 <body>
-
+<div>
+    <input placeholder="enter-todo" type="text" id="todo-item">
+    <button onclick="addtodo()">Add todo</button>
+</div>
+<div>
+    <ul id="list">
+        <!-- <li>all <button onclick="delBtn()">Delete</button></li> -->
+    </ul>
+</div>
      <!-- <a href="#" onclick=" test()">click me</a> -->
      <!-- <button onclick="cbtn()">click me</button> -->
 
@@ -128,7 +143,11 @@
         <button onclick="addMessage()">Send</button>
     </div> -->
 
-    <p  id="p1">this is example</p>
+    <!-- <p  id="p1">this is example</p> -->
+    <!-- <div id="main"></div> -->
+    <!-- <div id="messages"></div>
+    <input type="text" id="val" />
+    <button onclick="addMessage()">Send</button> -->
 </body>
 
 <!-- <button onclick="getElement()">Get</button> -->
