@@ -709,8 +709,8 @@
 //         val.value=""
 // }
 ///////////////////todofunction
-var list=document.getElementById("list")
-function addtodo(){
+        var list=document.getElementById("list")
+        function addtodo(){
         var todo_item=document.getElementById("todo-item")
 
         //create li tag with text node
@@ -727,6 +727,16 @@ function addtodo(){
         delBtn.appendChild(delText)
         li.appendChild(delBtn)
 
+        // create edit button
+
+        var editBtn =document.createElement("button")
+        var editText=document.createTextNode("Edit")
+        editBtn.appendChild(editText)
+        editBtn.setAttribute("onclick","editItem(this)")
+
+        li.appendChild(delBtn)
+        li.appendChild(editBtn)
+
         list.appendChild(li)
 
         todo_item.value=""
@@ -734,7 +744,13 @@ function addtodo(){
 }
 
 function deleteItem(e){
-  console.log(e)
+  e.parentNode.remove()
+}
+function editItem(){
+        
+}
+function deleteAll(){
+        list.innerHTML=""
 }
 
 ///Enable/disable Button function
