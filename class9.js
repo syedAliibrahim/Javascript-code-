@@ -746,8 +746,10 @@
 function deleteItem(e){
   e.parentNode.remove()
 }
-function editItem(){
-        
+function editItem(e){
+        // (e.parentNode.firstChild.nodeValue)
+        var val = prompt("enter the value",e.parentNode.firstChild.nodeValue)
+        e.parentNode.firstChild.nodeValue = val;
 }
 function deleteAll(){
         list.innerHTML=""
