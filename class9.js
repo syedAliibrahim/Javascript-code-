@@ -709,51 +709,51 @@
 //         val.value=""
 // }
 ///////////////////todofunction
-        var list=document.getElementById("list")
-        function addtodo(){
-        var todo_item=document.getElementById("todo-item")
+//         var list=document.getElementById("list")
+//         function addtodo(){
+//         var todo_item=document.getElementById("todo-item")
 
-        //create li tag with text node
-        var li =document.createElement('li')
-        var liText=document.createTextNode(todo_item.value)
-        li.appendChild(liText)
-        list.appendChild(li)
+//         //create li tag with text node
+//         var li =document.createElement('li')
+//         var liText=document.createTextNode(todo_item.value)
+//         li.appendChild(liText)
+//         list.appendChild(li)
 
-        //create delete button
-        var delBtn = document.createElement("button")
-        delText=document.createTextNode("Delete")
-        delBtn.setAttribute("class","btn")
-        delBtn.setAttribute("onclick","deleteItem(this)")
-        delBtn.appendChild(delText)
-        li.appendChild(delBtn)
+//         //create delete button
+//         var delBtn = document.createElement("button")
+//         delText=document.createTextNode("Delete")
+//         delBtn.setAttribute("class","btn")
+//         delBtn.setAttribute("onclick","deleteItem(this)")
+//         delBtn.appendChild(delText)
+//         li.appendChild(delBtn)
 
-        // create edit button
+//         // create edit button
 
-        var editBtn =document.createElement("button")
-        var editText=document.createTextNode("Edit")
-        editBtn.appendChild(editText)
-        editBtn.setAttribute("onclick","editItem(this)")
+//         var editBtn =document.createElement("button")
+//         var editText=document.createTextNode("Edit")
+//         editBtn.appendChild(editText)
+//         editBtn.setAttribute("onclick","editItem(this)")
 
-        li.appendChild(delBtn)
-        li.appendChild(editBtn)
+//         li.appendChild(delBtn)
+//         li.appendChild(editBtn)
 
-        list.appendChild(li)
+//         list.appendChild(li)
 
-        todo_item.value=""
-        console.log(li)
-}
+//         todo_item.value=""
+//         console.log(li)
+// }
 
-function deleteItem(e){
-  e.parentNode.remove()
-}
-function editItem(e){
-        // (e.parentNode.firstChild.nodeValue)
-        var val = prompt("enter the value",e.parentNode.firstChild.nodeValue)
-        e.parentNode.firstChild.nodeValue = val;
-}
-function deleteAll(){
-        list.innerHTML=""
-}
+// function deleteItem(e){
+//   e.parentNode.remove()
+// }
+// function editItem(e){
+//         // (e.parentNode.firstChild.nodeValue)
+//         var val = prompt("enter the value",e.parentNode.firstChild.nodeValue)
+//         e.parentNode.firstChild.nodeValue = val;
+// }
+// function deleteAll(){
+//         list.innerHTML=""
+// }
 
 ///Enable/disable Button function
 // function disableBtn(){
@@ -805,6 +805,82 @@ function deleteAll(){
 //         var textNode = document.createTextNode()
 // }
 
+
+////////////////////////////////////Object////////////
+                      //Objects:Properties
+// ar obj={
+//         name:"jklj"
+// }
+// console.log(obj.name)
+
+
+              ///Objects:Constructors
+
+
+        //       var obj1={
+        //         name:"ali",
+        //         roll:"2"
+        // }
+
+        // var obj2={
+        //         name:"abuzar",
+        //         roll:"2"
+        // }
+        // console.log(obj.name)
+        //       function Student(name,roll){
+        //         this.name= name;
+        //         this.roll=roll
+        //       }
+        //       var students1 =new Student("ali",1213);
+        //       var students2 =new Student("abua",1213);
+
+
+        //Objects:   Prototypes
+                //        function Student(name,roll){
+                //         this.name= name;
+                //         this.roll=roll
+                //       }
+                //      Student.prototype.getName =function()
+                //      {
+                //         return this.name
+                //      }
+
+                //       var students1 =new Student("ali",1213);
+
+                //       var students2 =new Student("abua",1213);
+
+                //       console.log (students1.getName())
+                //       console.log (students2.getName())
+
+
+                ///Objects:Checking for properties and methods
+
+                // var obj2={
+                //         name:"abuzar",
+                //         roll:2,
+                //         school: 'xyz',
+                //         sec: 'aa',
+                // }
+                
+                //  console.log("roll" in obj2)
+
+                //  var obj2={
+                //         name:"abuzar",
+                //         roll:2,
+                //         school: 'xyz',
+                //         sec: 'aa',
+                // }
+                //  for (var prop in obj2){
+                //         console.log(prop)
+                //  }
+
+                var obj2={
+                        name:"abuzar",
+                        roll:2,
+                        school: 'xyz',
+                        sec: 'aa',
+                }
+                console.log(obj2.hasOwnProperty("roll"))
 
 /////////////////////////////////////////////ES6=========================================================
 
