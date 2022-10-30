@@ -874,14 +874,64 @@
                 //         console.log(prop)
                 //  }
 
-                var obj2={
-                        name:"abuzar",
-                        roll:2,
-                        school: 'xyz',
-                        sec: 'aa',
-                }
-                console.log(obj2.hasOwnProperty("roll"))
+                // var obj2={
+                //         name:"abuzar",
+                //         roll:2,
+                //         school: 'xyz',
+                //         sec: 'aa',
+                // }
+                // console.log(obj2.hasOwnProperty("roll"))
 
+
+
+
+                // 76  Browser control:Getting and setting the URL
+                // function press (){
+                //         var locate=window.location.href
+                //         // console.log(locate)
+                //         // window.location.href='https://www.t20worldcup.com/match/100452#overview'
+                //         // window.location.assign('https://www.google.com')
+                //         // window.location.replace('https://www.t20worldcup.com/match/100452#overview')
+                //         // window.location.reload(false); //cache reloading
+                //         // window.location.reload(true);// server reloading
+                //         //   window.location.reload();
+
+                // }
+
+
+
+                //   78   Browser control:Forward and reverse
+
+
+                // You can make the browser go back one URL in the browser history, as if the user has
+                // pressed the Backspace key or clicked the browser's back button.
+
+                        // function back(){
+                        //          history.back()
+                        //        }
+
+                // To make the browser go forward in the history, as if the user has pressed alt-right-arrow
+                // or clicked the browser's forward button...
+
+                // function ford(){
+                //         history.forward()
+                //       }
+
+                //79 Browser control:Filling the window with content
+
+                function press(){
+                        // var content =`<h1>succesfully<h1>`
+                        // window.open().document.write(content)
+                       var win = window.open('https://www.google.com','win1','width=500,height=400')
+                       if (win === null){
+                        alert('aap disable kar do')
+                        // win.open()
+                        win.close()
+                       }
+                       
+
+                }
+                
 /////////////////////////////////////////////ES6=========================================================
 
 
