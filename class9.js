@@ -919,20 +919,29 @@
 
                 //79 Browser control:Filling the window with content
 
-                function press(){
-                        // var content =`<h1>succesfully<h1>`
-                        // window.open().document.write(content)
-                       var win = window.open('https://www.google.com','win1','width=500,height=400')
-                       if (win === null){
-                        alert('aap disable kar do')
-                        // win.open()
-                        win.close()
-                       }
-                       
+                // function press(){
+                //         // var content =`<h1>succesfully<h1>`
+                //         // window.open().document.write(content)
+                //         window.open('https://www.google.com','win1','width=500,height=400')
 
-                }
+
+                //        var win = window.open('https://www.google.com','win1','width=500,height=400')
+                //        if (win === null){
+                //         alert('aap disable kar do')
+                //         // win.open()
+                //         win.close()
+                //        }
+                // }
                 
 /////////////////////////////////////////////ES6=========================================================
+   
+//template literals
+// let firstName ="nn";
+// let lastName ="dd"
+// console.log(`my name is ${firstName} ${lastName}`)
+
+
+
 
 
 // function mystery(...params) {
@@ -984,12 +993,47 @@
 // let lastName ="afg"
 // console.log(`${firstName}${lastName}`)
 
+
+
+
 // //spread operators
+///Spread operator allows an iterable to expand in
+// places where 0+ arguments are expected. It is
+// mostly used in variable array where there is more
+// than 1 values are expected. It allows us the
+// privilege to obtain a list of parameters from an
+// array. Syntax of Spread operator is same as Rest
+// parameter but it works completely opposite of it.
+
+
 // var students1 =["alio","afagfg"]
 // var students2 =["inbgggh","afasfdsggdgdgfg"]
 // var students3 =[...students1,...students2,"zzzzzzzh","wwwwwwwwwwww"]
 // // var merage =students1.concat(students2).concat(students3)
 // console.log(students3)
+
+
+//// //spread operators
+// function sum (a,b,c){
+//          console.log(a+b-c);
+// }
+// var arrVal=[5,6,7,8]
+// // console.log(...arrVal);
+// sum(...arrVal);
+
+//replace concat()
+let arr1=[1,2,3,4,5,];
+let arr2=[4,5,6,7,8,];
+let arr3=[11,44,55,66,88,];
+arr2=[...arr1,arr3,arr2];
+console.log(arr2)
+//replace copy()
+
+// let arr1=[1,2,3,];
+// let arr3=[1,2,3];
+// let arr2=[...arr1,4 ,5,6,7,8,9,...arr3];
+// console.log(arr2)
+// console.log(arr1)
 
 
 /////////////////////////////////object destructuring====================
