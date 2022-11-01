@@ -1052,6 +1052,36 @@
 // let {school,names,ROll}=students;
 // console.log(ROll)
 // console.log(names)
+
+                           ////object destructuring
+// const students={
+//                 names: "ghous",
+//                 school: "saylani",
+//                 ROll: 23,
+//                 sec:{
+//                         lass1:'nnnobja'
+
+//                 }
+//         }
+//         let {names,school,ROll,sec}=students;
+//         console.log(`my ${names} check ${sec.lass1}`)
+
+
+                 /////             Array Destructuring
+
+              const mypro=['df','ff','ddd','Akkk']
+              
+        //       var top1 =mypro[0]
+        //       var top2 =mypro[1]
+        //       var top3 =mypro[2]
+        //       console.log(top1)
+        //       let [t1,t2,t3,t4,t5]= mypro;
+        //       console.log("my"+ t4);
+
+
+        let [t1,,,t4]=mypro;
+        console.log(`my ${t1} ${t4}`)
+
 /////////////////////////////ternary operators============
 // var age=51;
 // var check = age > 30 && age <60?
