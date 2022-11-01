@@ -1013,7 +1013,9 @@
 // console.log(students3)
 
 
-//// //spread operators
+//// /spread operators
+
+
 // function sum (a,b,c){
 //          console.log(a+b-c);
 // }
@@ -1021,12 +1023,16 @@
 // // console.log(...arrVal);
 // sum(...arrVal);
 
-//replace concat()
-let arr1=[1,2,3,4,5,];
-let arr2=[4,5,6,7,8,];
-let arr3=[11,44,55,66,88,];
-arr2=[...arr1,arr3,arr2];
-console.log(arr2)
+// //replace concat()
+
+
+// let arr1=[1,2,3,4,5,];
+// let arr2=[4,5,6,7,8,];
+// let arr3=[11,44,55,66,88,];
+// arr2=[...arr1,arr3,arr2];
+// console.log(arr2)
+
+
 //replace copy()
 
 // let arr1=[1,2,3,];
