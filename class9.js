@@ -1069,18 +1069,18 @@
 
                  /////             Array Destructuring
 
-              const mypro=['df','ff','ddd','Akkk']
-              
-        //       var top1 =mypro[0]
-        //       var top2 =mypro[1]
-        //       var top3 =mypro[2]
-        //       console.log(top1)
-        //       let [t1,t2,t3,t4,t5]= mypro;
-        //       console.log("my"+ t4);
+//                  var top2 =mypro[1]
+//         //       var top3 =mypro[2]
+//         //       console.log(top1)
+//         //       let [t1,t2,t3,t4,t5]= mypro;
+//         //       console.log("my"+ t4);
 
+//  const mypro=['df','ff','ddd','Akkk']
 
-        let [t1,,,t4]=mypro;
-        console.log(`my ${t1} ${t4}`)
+//         //       var top1 =mypro[0]
+//         //   
+//         let [t1,,,t4]=mypro;
+//         console.log(`my ${t1} ${t4}`)
 
 /////////////////////////////ternary operators============
 // var age=51;
@@ -1090,7 +1090,32 @@
 // "30 se chota hai"
 // console.log(check)
 
+//////////////Async or sync
 
+// var name1;
+// setTimeout(() => {
+//        name1="ali"
+// }, (1000));
+// console.log(name1)
+// console.log("num2")
+// console.log("num3")
+
+
+                 ///promise
+                 var promise =new Promise(function(res,rej){
+                        let zin="avilable";
+                        if(zin === "avilable"){
+                                res("han hai")
+                        }else{
+                                rej("nhi hai")
+                        }
+                 })
+                 promise.then(function(data){
+                        console.log(data)
+                 })
+                 .catch(function(error){
+                        console.log(error)
+                 })
 
 ////////////function expressions==========================
 
