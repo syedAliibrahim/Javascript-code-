@@ -1102,20 +1102,78 @@
 
 
                  ///promise
-                 var promise =new Promise(function(res,rej){
-                        let zin="avilable";
-                        if(zin === "avilable"){
-                                res("han hai")
-                        }else{
-                                rej("nhi hai")
-                        }
-                 })
-                 promise.then(function(data){
-                        console.log(data)
-                 })
-                 .catch(function(error){
-                        console.log(error)
-                 })
+                //  var promise =new Promise(function(res,rej){
+                //         let zin="avilable";
+                //         if(zin === "avilable"){
+                //                 res("han hai")
+                //         }else{
+                //                 rej("nhi hai")
+                //         }
+                //  })
+                //  promise.then(function(data){
+                //         console.log(data)
+                //  })
+                //  .catch(function(error){
+                //         console.log(error)
+                //  })
+
+                // function helloworld() {
+                //         return "Met ton texte ici";
+                // }
+                // helloworld()
+
+///////////////////////promise All
+                // let p1 = new Promise(function(resolve, reject){
+                //         console.log("First Promise");
+                //         resolve("First");
+                        
+                //           });
+                        
+                //         let p2 = new Promise(function(resolve, reject){
+                //         console.log("Second Promise");
+                //         resolve("Second");
+                        
+                //         })
+
+                //         Promise.all( [jp1, p2] ).then().catch();
+
+                        // let prl = new Promise((resolve, reject) => {
+                        //         setTimeout(() => {
+                        //         console.log('The first promise has resolved');
+                        //         resolve(10);
+                        //         }, 1 * 1000);
+                        //        });
+                                
+                        //         let pr2 = new Promise((resolve, reject) => {
+                        //         setTimeout(() => {
+                        //         console.log('The first promise has resolved');
+                        //         resolve(1);
+                        //         }, 2 * 1000);
+                        //     });
+                        //     let pr3 = new Promise((resolve, reject) => {
+                        //         setTimeout(() => {
+                        //         console.log('The first promise has resolved');
+                        //         resolve(1);
+                        //         }, 3 * 1000);
+                        //     });
+                        //     Promise.all([prl,pr2,pr3]).then((result)=>{
+                        //         console.log(`result:${result}`)
+
+                        //     }).catch((error)=>{
+                        //         console.log(`error:${error}`)
+                        //     });
+
+                            
+
+//////////////pass by reference vs pass by value
+
+// let obj1 ={
+//         name:"ali",
+//        pass:"ibar",
+// }
+// let obj2=obj1;
+// console.log(obj1)
+// console.log(obj2) 
 
 ////////////function expressions==========================
 
@@ -1133,6 +1191,31 @@
 // }
 // hello()
 
+
+////////// ==================Fetch API============
+
+// fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
+// .then((res)=>{
+//         console.log(res)
+// })
+// .then((data)=>{
+//         console.log(data);
+// })
+// let p =fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
+// p.then((val)=>{
+//         console.log(val.status)
+//         console.log(val.headers)
+
+//         return val.json
+// })
+// .then((val2)=>{
+//         console.log(val2)
+// })
+
+fetch('https://api.covid19api.com/summary')
+.then((apidata)=>{
+        console.log(apidata)
+})
 
 ///////////////////////map=======================
 
