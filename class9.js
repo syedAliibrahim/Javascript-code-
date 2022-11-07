@@ -1163,7 +1163,12 @@
                         //         console.log(`error:${error}`)
                         //     });
 
-                            
+                        // let pl = new Promise((resolve, reject )=>{
+                        //       setTimeout(()=>{
+                        //         console.log("res")
+                        //         resolve(56)
+                        //       },2000)
+                        // })
 
 //////////////pass by reference vs pass by value
 
@@ -1212,10 +1217,46 @@
 //         console.log(val2)
 // })
 
-fetch('https://api.covid19api.com/summary')
-.then((apidata)=>{
-        console.log(apidata)
+// fetch('https://api.covid19api.com/summary')
+// .then((apidata)=>{
+//         console.log(apidata)
+//         return apidata.json();
+// })
+// .then((act)=>{
+//         console.log(act)
+// })
+// .catch(er)
+
+
+
+
+/////////////////////////////asyac/await=============
+async function harry (){
+let deliWeather= new Promise((res,rej)=>{
+        setTimeout(()=>{
+                res("27 dog")
+        },3000)
 })
+let karWeather= new Promise((res,rej)=>{
+        setTimeout(()=>{
+                res("21 dog")
+        },5000)
+})
+console.log("fetching delhi weather wait karo:")
+let delw =await deliWeather
+console.log("fetching delhi weather :" + delw)
+console.log("fetching karachi weather wait karo...")
+let karw =await karWeather
+console.log("fetching karachi weather:" + karw)
+return [delw,karw]
+}
+console.log("wel to weather control room")
+ let a=harry()
+ a.then((val)=>{
+        console.log(val)
+ })
+
+
 
 ///////////////////////map=======================
 
