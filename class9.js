@@ -935,6 +935,28 @@
                 
 /////////////////////////////////////////////ES6=========================================================
    
+//templatr literals
+//ternary operators
+//pass by value
+//pass by refreence
+//spreed operators
+//rest operaors
+//highter order function
+
+//de structuring
+//array function
+//map
+//filter
+//forEach
+//some
+//find
+//function
+//arrow function
+// callback function
+// promise
+// async await
+
+
 //template literals
 // let firstName ="nn";
 // let lastName ="dd"
@@ -1231,36 +1253,55 @@
 
 
 /////////////////////////////asyac/await=============
-async function harry (){
-let deliWeather= new Promise((res,rej)=>{
-        setTimeout(()=>{
-                res("27 dog")
-        },3000)
-})
-let karWeather= new Promise((res,rej)=>{
-        setTimeout(()=>{
-                res("21 dog")
-        },5000)
-})
-console.log("fetching delhi weather wait karo:")
-let delw =await deliWeather
-console.log("fetching delhi weather :" + delw)
-console.log("fetching karachi weather wait karo...")
-let karw =await karWeather
-console.log("fetching karachi weather:" + karw)
-return [delw,karw]
-}
-console.log("wel to weather control room")
- let a=harry()
- a.then((val)=>{
-        console.log(val)
- })
+// async function harry (){
+// let deliWeather= new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//                 res("27 dog")
+//         },3000)
+// })
+// let karWeather= new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//                 res("21 dog")
+//         },5000)
+// })
+// console.log("fetching delhi weather wait karo:")
+// let delw =await deliWeather
+// console.log("fetching delhi weather :" + delw)
+// console.log("fetching karachi weather wait karo...")
+// let karw =await karWeather
+// console.log("fetching karachi weather:" + karw)
+// return [delw,karw]
+// }
+// console.log("wel to weather control room")
+//  let a=harry()
+//  a.then((val)=>{
+//         console.log(val)
+//  })
 
 
 
 ///////////////////////map=======================
 
+//templatr literals
+//ternary operators
+//pass by value
+//pass by refreence
+//spreed operators
+//rest operaors
+//highter order function
 
+//de structuring
+//array function
+//map
+//filter
+//forEach
+//some
+//find
+//function
+//arrow function
+// callback function
+// promise
+// async await
 
 // Map.set()
 // Map.get()
