@@ -963,8 +963,59 @@
 // console.log(`my name is ${firstName} ${lastName}`)
 
 
+////////////////////////////highter order function
+
+//////////////////////////// Filter===
+
+// let arr =[{
+//         name:"ali",
+//         age: 21,
+// },
+// {
+//         name:"ghous",
+//         age: 25,
+// },
+// {
+//         name:"salman",
+//         age: 26,
+// }]
+// let filter =arr.filter(a=> a.age > 20)
+
+// let filter =arr.filter(a=>false)
+// console.log(filter)
+//outPut
+//(3) [{…}, {…}, {…}]
+// 0
+// : 
+// {name: 'ali', age: 21}
+// 1
+// : 
+// {name: 'ghous', age: 25}
+// 2
+// : 
+// {name: 'salman', age: 26}
+// length
+// : 
+// 3
+// [[Prototype]]
+// : 
+// Array(0)
+
+                                ///array Map
+                                // let ary=[2,3,4,5,8,6];
+                                // console.log(ary)
+                                // let multiply =ary.map(a=> a*3)
+                                // console.log(multiply)
 
 
+
+
+///////////////////////search====
+// let name = "ali";
+// let search ="a";
+// if (name.startsWith(search)){
+//         console.log(name)
+// }
 
 // function mystery(...params) {
 //         return params;
@@ -1250,7 +1301,22 @@
 // .catch(er)
 
 
+//////////////////
 
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// .then(Response => Response.json())
+// .then(data=> console.log("resuly",data))
+// .catch(err =>console.log("error",err))
+
+async function getDate(){
+        let data = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        console.log(data)
+        setTimeout(()=>{
+                console.log(data)
+         },3000)
+}
+getDate()
 
 /////////////////////////////asyac/await=============
 // async function harry (){
