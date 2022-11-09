@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formAuth</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+</head>
+<body>
+    <div id="login_box">
+        <input type="email" id="email" />
+        <input type="password" id="password" />
+        <button onclick="login()">Login</button>
+        <button onclick="signup()">Signup</button>
+    </div>
+    <div id="welcome_box">
+        Welcome User: <span id="user"></span>
+        <div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script type="module">
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBRiUbnyvU4-x_4PR-kIV8dTfHYPDRex9k",
+            authDomain: "auth-85a5b.firebaseapp.com",
+          projectId: "auth-85a5b",
+            storageBucket: "auth-85a5b.appspot.com",
+            messagingSenderId: "509367529205",
+            appId: "1:509367529205:web:89e613ba7d347b516c9fbc"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                console.log(user);
+                document.getElementById("user").innerHTML = user.email;
+                document.getElementById("login_box").style.display = "none";
+                document.getElementById("welcome_box").style.display = "block";
+            } else {
+                document.getElementById("login_box").style.display = "block";
+                document.getElementById("welcome_box").style.display = "none";
+            }
+        });
+    </script>
+    <script src="/formAuth.js"></script>
+</body>
+</html>

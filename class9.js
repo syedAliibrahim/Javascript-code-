@@ -1010,7 +1010,7 @@
 
 
 
-///////////////////////search====
+                               ///////////////////////search====
 // let name = "ali";
 // let search ="a";
 // if (name.startsWith(search)){
@@ -1174,7 +1174,9 @@
 // console.log("num3")
 
 
-                 ///promise
+                                  ///promise==============
+
+
                 //  var promise =new Promise(function(res,rej){
                 //         let zin="avilable";
                 //         if(zin === "avilable"){
@@ -1194,6 +1196,40 @@
                 //         return "Met ton texte ici";
                 // }
                 // helloworld()
+
+//               async  function getData() {
+//                          let promise = new Promise(function (resolve, reject) {
+//                         fetch("https: //jsonplaceholder.typicode.com/todos/1")
+//                         .then(Response=> Response.json())
+//                         .then(function(data){
+//                                 resolve(data)
+//                         })
+//                         .catch(function(error){
+//                                 reject(error)
+//                         })
+//                 })
+// let data =await promise;
+// console.log(data)
+
+                        // promise
+                        // .then(function(data){
+                        //         console.log("data===>",data)
+                        // })
+                        // .catch(function(error){
+                        //         console.log(error)
+                        // })
+
+                
+                // let firebase_data
+
+                // fetch("https://jsonplaceholder.typicode.com/todos/1")
+                // .then(Response=> Response.json())
+                // .then(function(data){
+                //         firebase_data=data;
+                // })
+                // console.log(firebase_data)
+                        // }
+
 
 ///////////////////////promise All
                 // let p1 = new Promise(function(resolve, reject){
@@ -1309,14 +1345,14 @@
 // .then(data=> console.log("resuly",data))
 // .catch(err =>console.log("error",err))
 
-async function getDate(){
-        let data = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-        console.log(data)
-        setTimeout(()=>{
-                console.log(data)
-         },3000)
-}
-getDate()
+// async function getDate(){
+//         let data = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//         console.log(data)
+//         setTimeout(()=>{
+//                 console.log(data)
+//          },3000)
+// }
+// getDate()
 
 /////////////////////////////asyac/await=============
 // async function harry (){
@@ -1344,7 +1380,14 @@ getDate()
 //         console.log(val)
 //  })
 
-
+// async function getDate(){
+//         let data = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//         console.log(data)
+//         setTimeout(()=>{
+//                 console.log(data)
+//          },3000)
+// }
+// getDate()
 
 ///////////////////////map=======================
 
