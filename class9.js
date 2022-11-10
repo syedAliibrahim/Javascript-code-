@@ -1428,4 +1428,52 @@
 // Map.values()
 // Map.entries()
 
+/////////////////////////////// Error Handling===========
 
+// try{
+//         console.log('start of try');
+// //        kjkmkmv()
+//         console.log('laieafm kkfkf');
+// //      kflflf
+// //        console.log(kkkk)
+
+//         console.log(4545)
+
+//         alijfvjg();
+//         console.log('ead try');
+// }catch(error){
+//         // console.log('error has occurred');
+//         console.log(error)
+// }
+
+// try{
+//         kdkngknkgn;
+// }catch(error){
+// // console.log(error.message);
+// console.log(error.name);
+// console.log(error.stack);
+// }
+
+try{
+        // bakjfjnfg;
+        let json = '{"name":"ali","age":30}';
+        let user =JSON.parse(json);
+        console.log(user.name);
+        console.log(user.age);
+
+         if(!user.name){
+                throw new Error("in comlete data at json")
+         }
+
+}catch(error){
+        console.log(error)
+        // if(error instanceof ReferenceError){
+        //         console.log('ReferenceError');
+        // }else if(error instanceof TypeError){
+        //         console.log('typeError');
+        // }else{
+        //         console.log('unknow Error')
+        // }
+}finally{
+        console.log('finally');
+}
