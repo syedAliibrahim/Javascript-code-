@@ -21,6 +21,13 @@
 // console.log(message)
 // var saying = "upsy-" + "daisy";
 
+
+
+                                 // template strings
+
+                                //  var user="g,lsdg";
+                                //  var greet=`kkk${user}`;
+                                //  console.log(greet)
 //  console.log(saying)
 // var num = 20 % 6;
 // // console.log(num)
@@ -963,9 +970,14 @@
 // console.log(`my name is ${firstName} ${lastName}`)
 
 
+////////////////////////Arrow function
+
 ////////////////////////////highter order function
 
 //////////////////////////// Filter===
+
+// let arr=[2,5,78,9,52,45,559,7,,5,67,2,4,]
+// let arr1=arr.filter(val=>)
 
 // let arr =[{
 //         name:"ali",
@@ -1003,9 +1015,15 @@
 
                                 ///array Map
                                 // let ary=[2,3,4,5,8,6];
-                                // console.log(ary)
-                                // let multiply =ary.map(a=> a*3)
+                                // // console.log(ary)
+                                // let multiply =ary.map(value=> value*3)
                                 // console.log(multiply)
+                                // //filter
+                                // let moreThen = ary.filter((num)=>{
+                                //         return num >4
+                                // })
+                                // console.log(moreThen)
+
 
 
 
@@ -1084,6 +1102,13 @@
 // var students3 =[...students1,...students2,"zzzzzzzh","wwwwwwwwwwww"]
 // // var merage =students1.concat(students2).concat(students3)
 // console.log(students3)
+
+// const cars = ['🚗', '🚙'];
+// const trucks = ['🚚', '🚛'];
+
+// // Method 1: Concat
+// const combined1 = [].concat(cars, trucks);
+// console.log(combined1)
 
 
 //// /spread operators
@@ -1419,6 +1444,11 @@
 // Map.clear()
 // Map.has()
 
+// let arr=[2,5,7,8,9,6,3,4,5,6,];
+// const newArr=arr.map(function(set){
+//  console.log(set)
+// })
+
 // typeof
 // instanceof
 
@@ -1427,6 +1457,15 @@
 // Map.keys()
 // Map.values()
 // Map.entries()
+
+
+
+                                     //rest operaors
+        
+//  const sum =(...userId) =>{
+//         console.log(userId)
+//  }
+// sum(1,2,3,)
 
 /////////////////////////////// Error Handling===========
 
@@ -1454,26 +1493,159 @@
 // console.log(error.stack);
 // }
 
-try{
-        // bakjfjnfg;
-        let json = '{"name":"ali","age":30}';
-        let user =JSON.parse(json);
-        console.log(user.name);
-        console.log(user.age);
+// try{
+//         // bakjfjnfg;
+//         let json = '{"name":"ali","age":30}';
+//         let user =JSON.parse(json);
+//         console.log(user.name);
+//         console.log(user.age);
 
-         if(!user.name){
-                throw new Error("in comlete data at json")
-         }
+//          if(!user.name){
+//                 throw new Error("in comlete data at json")
+//          }
 
-}catch(error){
-        console.log(error)
-        // if(error instanceof ReferenceError){
-        //         console.log('ReferenceError');
-        // }else if(error instanceof TypeError){
-        //         console.log('typeError');
-        // }else{
-        //         console.log('unknow Error')
-        // }
-}finally{
-        console.log('finally');
-}
+// }catch(error){
+//         console.log(error)
+//         // if(error instanceof ReferenceError){
+//         //         console.log('ReferenceError');
+//         // }else if(error instanceof TypeError){
+//         //         console.log('typeError');
+//         // }else{
+//         //         console.log('unknow Error')
+//         // }
+// }finally{
+//         console.log('finally');
+
+//01
+
+// const titles = [
+//     { id: 1, title: "Title 1", marks:80 },
+//     { id: 2, title: "Title 2",marks:55 },
+//     { id: 3, title: "Title 3" ,marks:70},
+//     { id: 4, title: "Title 4" ,marks:62},
+// ];
+
+// const postsArray = [
+//     { id: 1, post: "Post 1" },
+//     { id: 3, post: "Post 3" },
+//     { id: 2, post: "Post 2" },
+// ];
+//map
+// let names =titles.map((stu)=>stu.title.toUpperCase())
+
+//filter
+// const details =titles.filter((stu)=>stu.marks<61)
+
+//multiple filter
+// const details =titles.filter((stu)=>stu.marks<61 && stu.id >3)
+//map filter 
+// const name =titles.filter((stu)=>stu.marks>62).map ((stu)=>stu.title)
+
+// const totalMarks=titles
+// .map((stu)=>{
+//         if (stu.marks<60){
+//                 stu.marks +=10;
+//         }
+//         return stu
+// })
+
+
+// console.log(totalMarks)
+// console.log(names)
+// let outputArray=titles.map(test);
+// console.log(outputArray)
+// function test(x){
+//         return x.id + " " + x.title}
+// let outputArray = [...titles,...postsArray] ;
+// let outputArray = titles.concat(postsArray)
+
+// let outputArray =titles.push(...postsArray);
+// let outputArray = [...titles,postsArray]
+// outputArray.push([].concat(titles,postsArray))
+// console.log(outputArray)
+
+// Expected output
+// [
+//     { "id": 1, "title": "Title 1", "post": "Post 1" },
+//     { "id": 2, "title": "Title 2", "post": "Post 2" },
+//     { "id": 3, "title": "Title 3", "post": "Post 3" }
+// ]
+
+
+//02
+
+// Write a program that prints the numbers from 1 to 70 and for multiples of ‘3’
+// print “foo” instead of the number and for the multiples of ‘5’ print “bar”.
+// If the number is divisible by both 3 and 5 then print foobar.
+
+// Expected Output:
+// 1, 2, foo, 4, bar, foo, 7, 8, foo, bar, 11, foo, 13, 14, foobar, 16, …..
+
+// for (var i = 1; i < 20; i++) {
+//   var res = i;
+//   if ( i % 5 == 0 && i % 3 == 0) {
+//       res = "foobar";
+// } else if (i % 5 == 0) {
+//     res = "bar";
+// } else if (i % 3 == 0) {
+//     res = "foo";
+//   }
+//   console.log(res);
+// }
+
+// for (var i = 1; i <= 70; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("foobar");
+//         } else if (i % 3 === 0) {
+//             console.log("foo");
+//         } else if (i % 5 === 0) {
+//             console.log("bar");
+//         } else {
+//             console.log(i);
+//         }
+//     }
+
+//03
+
+// let firstMap = {a: 'a', b: 'b'}
+// let secondMap = firstMap;
+
+// secondMap.a = "c"
+// console.log(firstMap)
+// Stexity PVT Ltd.1:22 PM
+// let a = 'a'
+// let b = a
+// b = 'b'
+
+
+//04
+
+
+// higher order function is that which takes a function in its 
+// argument and also returns a function
+
+// let interQues =(names)=>{
+//         if(names ==="Ali"){
+//                 return function(topic){
+//                         console.log(`hi ${names}.what  is ${topic} ?.pls expl us`)
+//                 }
+//         } if(names ==="salman"){
+//                 return function(topic){
+//                         console.log(`hi ${names}.what  is ${topic} ?.pls expl us`)
+//                 }
+//         } if(names ==="raza"){
+//                 return function(topic){
+//                         console.log(`hi ${names}.what  is ${topic} ?.pls expl us`)
+//                 }
+//         }else{
+//                 return function (){
+//                         console.log("welcom")
+//                 }
+//         }
+// }
+// interQues("Ali")("ui")  
+// interQues("salman")("web")  
+// interQues("raza")("xzi")  
+
+
+
