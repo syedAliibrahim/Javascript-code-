@@ -1647,5 +1647,25 @@
 // interQues("salman")("web")  
 // interQues("raza")("xzi")  
 
+///////////Currying/////////
 
 
+// function sum (a){
+//         return function(b){
+//                 return function(c)
+//         }
+// }
+
+
+//////////Closure///
+
+function creuser(name){
+        let greeting='hi'
+        function great(){
+                return greeting + name + ' is cccs';
+        }
+        return great()
+}
+
+let welcome= creuser('ali');
+console.log(welcome)
