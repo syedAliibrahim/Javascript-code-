@@ -1659,13 +1659,95 @@
 
 //////////Closure///
 
-function creuser(name){
-        let greeting='hi'
-        function great(){
-                return greeting + name + ' is cccs';
-        }
-        return great()
-}
+// function creuser(name){
+//         let greeting='hi'
+//         function great(){
+//                 return greeting + name + ' is cccs';
+//         }
+//         return great()
+// }
 
-let welcome= creuser('ali');
-console.log(welcome)
+// let welcome= creuser('ali');
+// console.log(welcome)
+
+
+///////object /////
+
+
+// let person ={
+//         name:"ali",
+//         rollno:"66",
+//         cni:'jhkj',
+//         classflutter:"abc",
+//         day:"monat",
+// }
+// let person1=[person]
+
+// console.log(person1)
+
+// let prevStudernt=localStorage.getItem("student");
+// let student =provid ? JSON.parse(prevStudernt ) : [];
+// function provid (){
+//         let dd={
+//                 na: prompt("kk"),
+//                 mmm: +prompt("number"),
+//         };
+//         student.push(dd);
+//         console.log(student)
+//         let stringify=JSON.stringify(student)
+// localStorage.setItem("sti", stringify)
+// }
+
+
+// localStorage.setItem("name","ali")
+
+let myPara=document.getElementById("kaka");
+myPara.innerText="ggg"
+
+
+
+///////rest parameter
+
+
+// function add(a,b,f){
+//         return (a+b+f)
+// }
+// console.log(add(5,6,8))
+
+//
+// const sum =(...userId) =>{
+//                 console.log(userId)
+//          }
+//         sum(1,2,3,)
+
+
+        ///////////////Spread Operator/////
+
+// let arr=[1,4,7,8,9];
+// const [a,d,g,r,t,] =[...arr];
+// console.log(a,d,g,)
+
+// let rw =[1,4,7,8,9];
+// let arr=[22,49,78,85,94];
+
+              ///////////////////Object Literal
+
+        //       let a="a";
+        //       let b="b";
+        //     let  obj= {
+        //         a : a,
+        //         b : b,
+        //     }
+        //     let  obj1= {
+        //         a,
+        //         b,
+        //     }
+        // let n ="set1";
+        // let obj ={
+        //         [n + "kkk"] : "ali",
+        //         coures: "llllo",
+
+        // }
+        //     console.log(obj)
+
+
