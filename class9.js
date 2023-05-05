@@ -1701,10 +1701,26 @@
 
 // localStorage.setItem("name","ali")
 
-let myPara=document.getElementById("kaka");
-myPara.innerText="ggg"
+
+/////////////////////////////DOM///
 
 
+// let myPara=document.getElementById("kaka");
+// myPara.innerText="ggg"
+
+// let myPara= document.querySelector("p");
+// myPara.innerHTML="<b>lklklkl</b>"
+// myPara.style.backgroundColor="#000";
+// myPara.style.color="#ffff"
+
+
+// setInterval(function(){
+//   if(myPara.style.display="none"){
+//         myPara.style.display="block";
+//   }else{
+//         myPara.style.display="none"
+//   }
+// },500)
 
 ///////rest parameter
 
